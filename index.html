@@ -13,6 +13,7 @@
       padding: 0;
     }
 
+    /* Dark mode by default */
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
       background-color: #0f172a;
@@ -35,30 +36,11 @@
       margin: 0 auto;
       padding: 40px 20px;
       text-align: center;
-      position: relative;
-    }
-
-    /* Legal Link Button */
-    .legal-link {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: #2563eb;
-      color: #ffffff;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: background 0.3s;
-    }
-
-    .legal-link:hover {
-      background: #1e40af;
     }
 
     /* Hero Section */
     .hero {
-      padding: 60px 20px 20px 20px;
+      padding: 60px 20px;
     }
 
     .hero h1 {
@@ -139,6 +121,7 @@
       margin: 0 8px;
     }
 
+    /* Responsive Hero */
     @media (max-width: 600px) {
       .hero h1 {
         font-size: 2rem;
@@ -146,20 +129,11 @@
       .hero p {
         font-size: 1.1rem;
       }
-      .legal-link {
-        top: 15px;
-        right: 15px;
-        padding: 10px 16px;
-        font-size: 0.85rem;
-      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Legal Documents Link -->
-    <a href="/zedmarket" class="legal-link">View Zedmarket Legal Documents</a>
-
     <!-- Hero Section -->
     <section class="hero">
       <h1>LSKVIBES LTD</h1>
@@ -196,6 +170,10 @@
         <p>Enhance your marketplace experience with subscriptions, sponsored listings, and exclusive ads.</p>
       </div>
     </section>
+
+    <p>
+      <a href="/zedmarket">View Zedmarket Legal Documents</a>
+    </p>
   </div>
 
   <footer>
