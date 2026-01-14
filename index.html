@@ -5,6 +5,7 @@
   <title>LSKVIBES LTD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="LSKVIBES LTD is a technology company building digital marketplace platforms such as Zedmarket." />
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
@@ -17,19 +18,50 @@
       min-height: 100vh;
       text-align: center;
     }
-    a { color: #38bdf8; text-decoration: none; font-weight: 600; transition: color 0.3s; }
-    a:hover { color: #60a5fa; }
 
-    .container { max-width: 720px; padding: 40px; }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #60a5fa;
+    }
+
+    .container {
+      max-width: 720px;
+      padding: 40px;
+    }
 
     /* Logos */
-    .logos { display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; flex-wrap: wrap; }
-    .logos img { max-height: 80px; width: auto; }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
 
-    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    p { font-size: 1.1rem; line-height: 1.6; color: #cbd5f5; margin-bottom: 30px; }
+    .logos img {
+      max-height: 80px;
+      width: auto;
+    }
 
-    /* Legal Button top-right */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #cbd5f5;
+      margin-bottom: 30px;
+    }
+
+    /* Legal Button */
     .legal-link {
       position: absolute;
       top: 20px;
@@ -40,22 +72,101 @@
       color: #ffffff;
       font-weight: 600;
     }
-    .legal-link:hover { background: #1e40af; }
+
+    .legal-link:hover {
+      background: #1e40af;
+    }
 
     /* Download Buttons */
-    .download-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 50px; }
-    .download-buttons a { display: inline-flex; align-items: center; gap: 10px; background: #2563eb; color: #ffffff; padding: 14px 22px; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: background 0.3s; }
-    .download-buttons a:hover { background: #1e40af; }
-    .download-buttons img { height: 28px; width: auto; }
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
 
-    /* Features Section */
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 60px; }
-    .feature-item { background: #1e293b; padding: 20px; border-radius: 12px; }
-    .feature-item h3 { margin-bottom: 10px; color: #38bdf8; }
-    .feature-item p { color: #cbd5f5; font-size: 1rem; }
+    .download-buttons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
 
-    footer { margin-top: 40px; font-size: 0.9rem; color: #94a3b8; text-align: center; }
-    footer a { margin: 0 8px; }
+    .download-buttons a:hover {
+      background: #1e40af;
+    }
+
+    .download-buttons img {
+      height: 28px;
+      width: auto;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .feature-item {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .feature-item h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .feature-item p {
+      color: #cbd5f5;
+      font-size: 1rem;
+    }
+
+    /* Social Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      background: #1e293b;
+      border-radius: 50%;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .social-links a:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    .social-links svg {
+      width: 20px;
+      height: 20px;
+      fill: #e5e7eb;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
 
     @media (max-width: 600px) {
       h1 { font-size: 2rem; }
@@ -63,6 +174,7 @@
     }
   </style>
 </head>
+
 <body>
   <a href="/zedmarket" class="legal-link">Zedmarket Legal Docs</a>
 
@@ -74,16 +186,21 @@
     </div>
 
     <h1>LSKVIBES LTD</h1>
-    <p>We are a technology company building trusted digital marketplace platforms. Our flagship product <strong>Zedmarket</strong> connects buyers and sellers in Zambia and beyond.</p>
+    <p>
+      We are a technology company building trusted digital marketplace platforms.
+      Our flagship product <strong>Zedmarket</strong> connects buyers and sellers in Zambia and beyond.
+    </p>
 
+    <!-- App Downloads -->
     <div class="download-buttons">
-      <a href="https://play.google.com/store/apps/details?id=com.lskvibes.zedmarket" target="_blank">
+      <a href="https://play.google.com/store/apps/details?id=com.lskvibes.zedmarket" target="_blank" rel="noopener">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
-        Download Android
+        Android App
       </a>
-      <a href="https://apps.apple.com/de/app/zedmarket/id6751460463?l=en-GB" target="_blank">
+
+      <a href="https://apps.apple.com/de/app/zedmarket/id6751460463?l=en-GB" target="_blank" rel="noopener">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" />
-        Download iOS
+        iOS App
       </a>
     </div>
 
@@ -91,21 +208,37 @@
     <section class="features">
       <div class="feature-item">
         <h3>Secure Transactions</h3>
-        <p>All payments are processed through trusted providers with encryption to protect your financial information.</p>
+        <p>Payments are processed through trusted providers with full encryption.</p>
       </div>
       <div class="feature-item">
         <h3>Verified Sellers</h3>
-        <p>Connect with real sellers. Contact reveal and premium listings ensure trustworthy transactions.</p>
+        <p>Trade with confidence using verified listings and seller ratings.</p>
       </div>
       <div class="feature-item">
         <h3>Ratings & Reviews</h3>
-        <p>Make informed decisions with user ratings and reviews for every product and service listed.</p>
+        <p>Make informed decisions with transparent user feedback.</p>
       </div>
       <div class="feature-item">
         <h3>Premium Features</h3>
-        <p>Enhance your marketplace experience with subscriptions, sponsored listings, and exclusive ads.</p>
+        <p>Boost visibility with sponsored listings and subscriptions.</p>
       </div>
     </section>
+
+    <!-- Social Media -->
+    <div class="social-links">
+      <!-- Replace href values with your real profiles -->
+      <a href="https://www.linkedin.com/company/lskvibes" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.99h4V24h-4zM8.5 8.99h3.8v2.05h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.07V24h-4v-7.96c0-1.9-.03-4.35-2.65-4.35-2.65 0-3.05 2.07-3.05 4.21V24h-4z"/></svg>
+      </a>
+
+      <a href="https://www.facebook.com/lskvibeszambia" target="_blank" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M22.68 0H1.32C.59 0 0 .6 0 1.34v21.32C0 23.4.59 24 1.32 24h11.5v-9.29H9.69V11.1h3.13V8.41c0-3.1 1.89-4.79 4.66-4.79 1.32 0 2.46.1 2.79.14v3.24h-1.91c-1.5 0-1.79.72-1.79 1.76v2.31h3.58l-.47 3.61h-3.11V24h6.1c.73 0 1.32-.6 1.32-1.34V1.34C24 .6 23.41 0 22.68 0z"/></svg>
+      </a>
+
+      <a href="https://x.com/ZedmarketZambia" target="_blank" aria-label="X">
+        <svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.77 7.73L23.5 22h-6.6l-5.17-6.55L5.9 22H2.8l7.24-8.27L.5 2h6.8l4.66 5.97L18.9 2z"/></svg>
+      </a>
+    </div>
 
     <footer>
       © 2026 LSKVIBES LTD. All rights reserved.
